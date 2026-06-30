@@ -1,0 +1,76 @@
+{
+  "auth": {
+    "email": "Email",
+    "password": "Password",
+    "forgetPassword": "Forgot Password?",
+    "login": "Login",
+    "orSignInWith": "Or sign in with",
+    "noAccount": "Don't have an account?",
+    "alreadyHaveAccount": "Already have an account?",
+    "signUp": "Sign Up",
+    "fullName": "Full Name",
+    "newPassword": "New Password",
+    "confirmPassword": "Confirm Password"
+  },
+
+  "home": {
+    "home": "Home",
+    "history": "History",
+    "dictionary": "Dictionary",
+    "settings": "Settings",
+    "useCamera": "Use Camera",
+    "communities": "Communities",
+    "suggestions": "Suggestions To You",
+    "sign": " Sign",
+    "theSign": "The Sign",
+    "SEARCH": "Search",
+    "textTo": "Text To",
+    "learnNew": "Learn New",
+    "addFriend": "Add Friend",
+    "toSign": "To Sign",
+    "fromSign": "From Sign",
+    "videoTo": "Video To"
+  },
+
+  "camera": {
+    "answer": "answer",
+    "translate": "Translate",
+    "yourAnswer": "Your Answer",
+    "audio": "Audio",
+    "answerWith": "Answer With",
+    "text": "Text",
+    "typing": "Typing",
+    "learnNewSign": "Learn New Sign",
+    "clickToSign": "Click to Sign Result",
+    "result": "Result",
+    "textToSign": "Text to Sign",
+    "saveToHistory": "Save to History",
+    "or": "Or"
+  },
+
+  "settings": {
+    "myProfile": "My Profile",
+    "friends": "My Friends",
+    "language": "Language",
+    "performance": "Performance",
+    "accessibility": "Accessibility Settings",
+    "dark": "Dark",
+    "light": "Light",
+    "mode": "Mode",
+    "logout": "Log Out",
+    "ar": "Arabic",
+    "en": "English",
+    "myChats": "My Chats",
+    "profile": "Profile",
+    "message": "Message",
+    "suggestions": "Friend Suggestions",
+    "community": "Communities",
+    "newMessage": "New Message"
+  },
+
+  "user": {
+    "interested": "Interested",
+    "deafMute": "Deaf and Mute",
+    "normal": "Normal"
+  }
+}

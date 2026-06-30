@@ -1,0 +1,18 @@
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="facebook_app_id">1175915391305474</string>
+    <string name="fb_login_protocol_scheme">fb1175915391305474</string>
+    <string name="facebook_client_token">a8b6a1e349a7b166bd20778a22592d37</string>
+    <string name="app_name">"In Touch"</string>
+
+</resources> -->
+
+
+
+
+<resources>
+    <string name="app_name">graduation project</string>
+    <string name="facebook_app_id">2380295822444586</string>
+    <string name="facebook_client_token">2318205960f69b49f91a2a8ba6d33c97</string>
+    <string name="fb_login_protocol_scheme">fb2380295822444586</string>
+</resources>

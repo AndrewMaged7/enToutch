@@ -1,0 +1,76 @@
+{
+  "auth": {
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "forgetPassword": "نسيت كلمة المرور؟",
+    "login": "تسجيل الدخول",
+    "alreadyHaveAccount": "هل لديك حساب بالفعل؟",
+    "orSignInWith": "أو سجل الدخول باستخدام",
+    "noAccount": "ليس لديك حساب؟",
+    "signUp": "إنشاء حساب",
+    "fullName": "الاسم الكامل",
+    "newPassword": "كلمة المرور الجديدة",
+    "confirmPassword": "تأكيد كلمة المرور"
+  },
+
+  "home": {
+    "home": "الرئيسية",
+    "history": "السجل",
+    "dictionary": "القاموس",
+    "settings": "الإعدادات",
+    "useCamera": "استخدام الكاميرا",
+    "communities": "المجتمعات",
+    "suggestions": "اقتراحات لك",
+    "sign": "إشارة ",
+    "theSign": "الإشارة",
+    "textToSign": "تحويل النص إلى إشارة",
+    "SEARCH": "بحث",
+    "learnNewSign": "تعلم إشارة جديدة",
+    "textTo": "تحويل النص إلى",
+    "learnNew": "تعلم جديد",
+    "addFriend": "إضافة صديق",
+    "toSign": "إلى إشارة",
+    "fromSign": "من إشارة",
+    "videoTo": "فيديو إلى"
+  },
+
+  "camera": {
+    "answer": "الإجابة",
+    "translate": "ترجمة",
+    "yourAnswer": "إجابتك",
+    "audio": "صوت",
+    "answerWith": "الإجابة باستخدام",
+    "text": "نص",
+    "typing": "كتابة",
+    "clickToSign": "اضغط لعرض نتيجة الإشارة",
+    "result": "النتيجة",
+    "saveToHistory": "حفظ في السجل",
+    "or": "أو"
+  },
+
+  "settings": {
+    "myProfile": "ملفي الشخصي",
+    "friends": "أصدقائي",
+    "language": "اللغة",
+    "performance": "الأداء",
+    "accessibility": "إعدادات إمكانية الوصول",
+    "dark": "داكن",
+    "light": "فاتح",
+    "mode": "الوضع",
+    "logout": "تسجيل الخروج",
+    "ar": "العربية",
+    "en": "الإنجليزية",
+    "myChats": "محادثاتي",
+    "profile": "الملف الشخصي",
+    "message": "رسالة",
+    "suggestions": "اقتراحات الأصدقاء",
+    "community": "المجتمعات",
+    "newMessage": "رسالة جديدة"
+  },
+
+  "user": {
+    "interested": "مهتم",
+    "deafMute": "أصم وأبكم",
+    "normal": "طبيعي"
+  }
+}

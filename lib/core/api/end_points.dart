@@ -1,0 +1,36 @@
+class EndPoints {
+  String baseUrl = 'https://entouch.runasp.net/';
+  String signUp = 'api/Auth/register';
+  String login = 'api/Auth/login';
+  String logout = 'api/Auth/logout';
+  String forgetPasswordSendEmail = 'api/ForgotPassword/send-otp';
+  String forgetPasswordSendOtp = 'api/ForgotPassword/verify-otp';
+  String forgetPasswordSendNewPass = 'api/ForgotPassword/reset-password';
+  String signInWithGoogle = 'api/SocialAuth/google';
+  String getChatConversations = 'api/Chat/conversation/';
+  String addComment = 'api/Community/post/';
+  String addLike = 'api/Community/post/';
+  String addPost = 'api/Community/post';
+  String deleteComment = 'api/Community/comment/';
+  String deletePost = 'api/Community/post/';
+  String getComments = 'api/Community/post/';
+  String getMyPosts = 'api/Community/my-posts';
+  String getPosts = 'api/Community/feed';
+  String getSuggestions = 'api/Friends/suggestions';
+  String getFriends = 'api/Friends';
+  String sendRequest = 'api/Friends/request/';
+  String getPending = 'api/Friends/pending';
+  String acceptRequest = 'api/Friends/accept/';
+  String rejectRequest = 'api/Friends/reject/';
+  String deleteFriend = 'api/Friends/';
+  String signToText = "api/SignLanguage/translate";
+  String dictionary = "api/Translation/create";
+  String getHistory = "api/Translation/my-history";
+  String saveHistory = "api/Translation/create";
+  String getMyChats = "/api/Chat/conversations";
+  String showVideos = "https://entouch.runasp.net";
+  String sendFcmToken = "api/Chat/register-device";
+  String upLoadTOServer = "api/Media/upload";
+  String extractAudioFromVideo = "api/Translation/Transcript";
+  String searchFriends = "api/Friends/search";
+}

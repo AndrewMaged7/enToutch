@@ -1,0 +1,87 @@
+import 'dart:io';
+import 'package:bloc/bloc.dart';
+import 'package:dio/dio.dart';
+import 'package:en_touch/core/services/app_services.dart';
+import 'package:en_touch/features/camera/data/model/save_history_model.dart';
+import 'package:image_gallery_saver_plus/image_gallery_saver_plus.dart';
+import 'package:meta/meta.dart';
+import 'package:path_provider/path_provider.dart';
+import 'package:video_player/video_player.dart';
+
+part 'result_state.dart';
+
+class InverseResultCubit extends Cubit<InverseResultState> {
+  InverseResultCubit() : super(InverseResultInitial());
+  VideoPlayerController? videoPlayerController;
+  AppServices appServices = AppServices();
+  String? lastVideo;
+  var videoPath;
+  var resultText;
+  SaveHistoryModel? saveHistoryModel;
+
+  Future<void> playVideo(String videoPath) async {
+    try {
+      if (videoPlayerController != null) {
+        if (videoPlayerController!.value.isPlaying) {
+          await videoPlayerController!.pause();
+        } else {
+          await videoPlayerController!.play();
+        }
+      } else {
+        await syncVideo(videoPath);
+      }
+      if (isClosed) return;
+      emit(InverseResultSuccess());
+    } catch (e) {
+      if (isClosed) return;
+      emit(InverseResultError(e.toString()));
+    }
+  }
+
+
+  Future<void> syncVideo(String? path) async {
+  if (path == null || path.isEmpty) return;
+  emit(InverseResultLoading());
+  if (path == lastVideo && videoPlayerController != null) {
+    await videoPlayerController!.play();
+    emit(InverseResultSuccess());
+    return;
+  }
+  
+  lastVideo = path;
+  await videoPlayerController?.dispose();
+
+  final uri = Uri.tryParse(path);
+  
+  if (uri != null && (uri.scheme == 'http' || uri.scheme == 'https')) {
+    videoPlayerController = VideoPlayerController.networkUrl(
+      uri,
+    );
+  } else {
+    videoPlayerController = VideoPlayerController.file(File(path));
+  }
+  await videoPlayerController!.initialize();
+  await videoPlayerController!.play();
+  emit(InverseResultSuccess());
+}
+
+
+
+Future<void> saveToDevice(String url) async {
+  emit(InverseResultSaveToGalleryLoading());
+  try {
+    final dir = await getTemporaryDirectory();
+    final filePath =
+        '${dir.path}/${DateTime.now().millisecondsSinceEpoch}.mp4';
+    await Dio().download(url, filePath);
+    await ImageGallerySaverPlus.saveFile(filePath);
+    emit(InverseResultSaveToGallerySuccess());
+  } catch (e) {
+    emit(InverseResultSaveToGalleryError(e.toString()));
+  }
+}
+
+
+
+
+}
